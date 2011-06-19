@@ -1,7 +1,7 @@
 function data_out = LTE_common_CRC(data_in, crc_type)
 % LTE_common_CRC - CRC caculation.
 % DEFINED IN PROTOCOL 3GPP TS 36.212
-% [data_out] = LTE_common_scrambling(data_in)
+% [data_out] = LTE_common_CRC(data_in)
 % Author: Liang Ruan
 % (c) 2009 by LTE-LLS
 % http://lte-lls.googlecode.com
@@ -36,4 +36,4 @@ for ii = crc_len+2:data_len+crc_len
     temp = [temp(2:end) data_out(ii)];
 end
 data_crc = mod(temp+gen_poly,2);
-data_out = [data_in data_crc];
+data_out = [data_in data_crc(2:end)];
