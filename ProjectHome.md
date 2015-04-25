@@ -1,0 +1,1 @@
+This project will be developed for simulating link-level performace of LTE downlink and uplink based on 3GPP LTE protocol ([R9](https://code.google.com/p/lte-lls/source/detail?r=9)), and the performance must satisfy performace requirements specified by the performance. The project will be developed using MATLAB in the first phase, and considered using C/C++ in the second phase.
